@@ -25,5 +25,14 @@ License: GPLv3
     
 */
 
+# Disable call to wp.com made by Jetpack
+# per http://wordpress.org/support/topic/plugin-jetpack-by-wordpresscom-unnecessary-java-script-call
+
+function dequeue_devicepx() {
+	wp_dequeue_script( 'devicepx' );
+}
+
+add_action( 'wp_enqueue_scripts', 'dequeue_devicepx', 20 );
+
 
 ?>
