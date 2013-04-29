@@ -37,12 +37,12 @@ add_action( 'wp_enqueue_scripts', 'dequeue_devicepx', 20 );
 
 # Add piwik script
 
-function wptuts_scripts_basic() {  
+function load_piwik_js() {  
         wp_register_script( 'piwik', plugins_url( '/stats.js', __FILE__ ) );  
         wp_enqueue_script( 'piwik' );  
 }  
    
-add_action( 'wp_enqueue_scripts', 'wptuts_scripts_basic' );  
+add_action( 'wp_enqueue_scripts', 'load_piwik_js' );  
 
 ?>
 
