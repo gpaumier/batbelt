@@ -45,5 +45,3 @@ function load_piwik_js() {
 add_action( 'wp_enqueue_scripts', 'load_piwik_js' );  
 
 ?>
-
-
