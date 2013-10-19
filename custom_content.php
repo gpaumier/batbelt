@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Implementation of custom content types and taxonomies for gpc
- * 
+ * Implementation of custom content types for gpc
+
  */
 
 ####################################################################
@@ -35,7 +35,7 @@ function register_cpt_batbelt_project() {
         'hierarchical' => true,
         'description' => 'Pages for projects and accomplishments',
         'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'revisions', 'page-attributes' ),
-        'taxonomies' => array( 'category', 'post_tag', 'role', 'location', 'start_date', 'end_date' ),
+        'taxonomies' => array( 'category', 'post_tag', 'batbelt_roles', 'batbelt_locations' ),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -84,7 +84,7 @@ function register_cpt_batbelt_event() {
         'hierarchical' => false,
         'description' => 'Events',
         'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'revisions' ),
-        'taxonomies' => array( 'category', 'post_tag', 'role', 'location', 'start_date', 'end_date' ),
+        'taxonomies' => array( 'category', 'post_tag', 'batbelt_roles', 'batbelt_locations' ),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,

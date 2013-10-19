@@ -25,9 +25,10 @@ License: GPLv3
     
 */
 
-# Include PHP file declaring custom content types and taxonomies
+# Include PHP files declaring custom content types and taxonomies
 
 require_once('custom_content.php'); 
+require_once('custom_taxonomies.php'); 
 
 # Disable call to wp.com made by Jetpack
 # per http://wordpress.org/support/topic/plugin-jetpack-by-wordpresscom-unnecessary-java-script-call
