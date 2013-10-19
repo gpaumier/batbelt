@@ -47,7 +47,7 @@ function register_cpt_batbelt_project() {
         'has_archive' => true,
         'query_var' => true,
         'can_export' => true,
-        'rewrite' => array( 'slug' => 'projects' ),
+        'rewrite' => array( 'slug' => 'project' ),
         'capability_type' => 'post'
     );
 
