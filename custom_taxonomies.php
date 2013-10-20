@@ -40,7 +40,7 @@ function register_taxonomy_batbelt_people() {
         'show_admin_column' => false,
         'hierarchical' => false,
         'rewrite' => array( 
-            'slug' => 'person', 
+            'slug' => 'people', 
             'hierarchical' => false
         ),
         'query_var' => true
@@ -89,7 +89,7 @@ function register_taxonomy_batbelt_locations() {
         'hierarchical' => true,
 
         'rewrite' => array( 
-            'slug' => 'location', 
+            'slug' => 'locations', 
             'hierarchical' => true
         ),
         'query_var' => true
@@ -136,7 +136,7 @@ function register_taxonomy_batbelt_roles() {
         'hierarchical' => false,
 
         'rewrite' => array( 
-            'slug' => 'role', 
+            'slug' => 'roles', 
             'hierarchical' => false
         ),
         'query_var' => true
