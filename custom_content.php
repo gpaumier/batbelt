@@ -44,10 +44,10 @@ function register_cpt_batbelt_project() {
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,
-        'has_archive' => true,
+        'has_archive' => false,
         'query_var' => true,
         'can_export' => true,
-        'rewrite' => array( 'slug' => 'projects' ),
+        'rewrite' => array( 'slug' => 'project' ),
         'capability_type' => 'post'
     );
 
@@ -93,10 +93,10 @@ function register_cpt_batbelt_event() {
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,
-        'has_archive' => true,
+        'has_archive' => false,
         'query_var' => true,
         'can_export' => true,
-        'rewrite' => array( 'slug' => 'calendar' ),
+        'rewrite' => array( 'slug' => 'event' ),
         'capability_type' => 'post'
     );
 
